@@ -1,0 +1,87 @@
+//
+// Do not remove or alter the notices in this preamble.
+// This software code is created for Online Payments on 07/02/2024
+// Copyright © 2024 Global Collect Services. All rights reserved.
+//
+
+// MARK: Start Screen
+"ClientSessionDetails" = "Client session details";
+"ClientSessionIdentifier" = "Client session ID";
+"ClientSessionIdentifierHint" = "Returned in the Server to Server Create Client Session call. This is the identifier of the current session.";
+
+"CustomerIdentifier" = "Customer ID";
+"CustomerIdentifierHint" = "Returned in the Server to Server Create Client Session call. This is a temporary identifier for you within the session.";
+
+"ClientIdentifier" = "Client API URL";
+"ClientIdentifierHint" = "Returned in the Server to Server Create Client Session call. This URL points to the Worldline Client API";
+
+"AssetURL" = "Assets URL";
+"AssetURLHint" = "Returned in the Server to Server Create Client Session call. This URL can be used to retrieve static resources, such as payment product logo images.";
+
+"Paste" = "Paste client session JSON reponse";
+
+"PaymentDetails" = "Payment details";
+
+"AmountInCents" = "Amount in cents";
+"AmountInCentsHint" = "The amount that will be used for this payment. Note that the value must be provided in the smallest possible denominator for the currency, and should be formatted before showing.";
+
+"CountryCode" = "Country code";
+"CountryCodeHint" = "The ISO 3166-1 alpha-2 standard 2-letter Country Code of the consumer.";
+
+"CurrencyCode" = "Currency code";
+"CurrencyCodeHint" = "The ISO 4217 standard 3-letter Currency Code of the currency in which the payment will be made.";
+
+"OtherOptions" = "Other options";
+
+"RecurringPayment" = "Payment is recurring";
+"RecurringPaymentHint" = "Indicates whether the payment product that is used for this payment should support recurring payments. If set to true, products not supporting recurring will be filtered.";
+
+"ApplePay" = "Apple Pay";
+
+"MerchantId" = "Merchant ID";
+"MerchantIdHint" = "Your Worldline merchant ID. You can find this ID in the Configuration Center.";
+
+"Checkout" = "Proceed to checkout";
+
+// MARK: Payment Items Overview Screen
+"PreviouslyUsedAccounts" = "Previously used accounts";
+"OtherProducts" = "Other payment products";
+"ProductNotAvailable" = "The product you selected is currently not available, please select another one.";
+
+// MARK: Card Product Screen
+"RememberMyDetails" = "Remember my payment details for future purchases";
+"CVVTooltip" = "Last 3 digits on the back of the card";
+"Pay" = "Pay";
+"IINUnknown" = "We couldn't find the IIN for this card number";
+
+// MARK: End Screen
+"SuccessLabel" = "Success!";
+"SuccessText" = "Tap below to copy the encrypted fields that must be used in the Create Payment request.";
+"ShowEncryptedDataResult" = "Show encrypted fields data";
+"HideEncryptedDataResult" = "Hide encrypted fields data";
+"EncryptedFieldsHeader" = "Encrypted fields:";
+"EncryptedClientMetaInfoHeader" = "Encrypted client meta info:";
+"CopyEncryptedDataLabel" = "Copy encrypted fields to clipboard";
+"ReturnToStart" = "Return to start";
+
+// MARK: Error messages
+"DefaultErrorMessage" = "Something went wrong";
+"NavigateToPaymentItemsOverviewErrorMessage" = "Something went wrong when navigating to the Payment Items Overview. Please try again.";
+"EmptyField" = "This field should not be empty";
+"ParsedJsonNilErrorMessage" = "Data is nil";
+"JsonErrorMessage" = "Parsing failed, please paste a properly formatted JSON String";
+"PaymentProductNetworksErrorMessage" = "We are unable to retrieve information about the selected payment product's networks. \n\n Please check your internet connection and the provided client session identifier and customer identifier.";
+"CannotFindMerchantIdErrorMessage" = "Could not find merchant id. Please try again by re-instantiating your Session and ensure you provide a merchant id.";
+"InvalidApplePayErrorMessage" = "Invalid Apple Pay product";
+"UnknownProductLabel" = "Unknown product";
+"NavigateToEndScreenErrorMessage" = "Something went wrong when navigating to the End Screen. Please try again.";
+"InvalidValidationError" = "Invalid validation error";
+
+// MARK: Header
+"SecurePayment" = "Secure payment";
+
+// MARK: Loading spinner
+"Loading" = "Loading...";
+
+// MARK: Text field
+"Placeholder" = "Placeholder";

@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF7E30432B739984007FF200 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E30422B739984007FF200 /* SceneDelegate.swift */; };
+		BF7E30452B739986007FF200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF7E30442B739986007FF200 /* Assets.xcassets */; };
+		BF7E30512B73A6A0007FF200 /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E30502B73A6A0007FF200 /* StartScreen.swift */; };
+		BF7E30542B73A716007FF200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E30532B73A716007FF200 /* AppDelegate.swift */; };
+		BF7E305B2B73B4ED007FF200 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E305A2B73B4ED007FF200 /* AppConstants.swift */; };
+		BF7E305E2B73B543007FF200 /* OnlinePaymentsKit in Frameworks */ = {isa = PBXBuildFile; productRef = BF7E305D2B73B543007FF200 /* OnlinePaymentsKit */; };
+		BF7E30612B73B606007FF200 /* StartScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E30602B73B606007FF200 /* StartScreenViewModel.swift */; };
+		BF7E30642B73B6BA007FF200 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E30632B73B6BA007FF200 /* TextFieldView.swift */; };
+		BF7E30662B73B6D6007FF200 /* InfoButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E30652B73B6D6007FF200 /* InfoButtonView.swift */; };
+		BF7E30682B73B74F007FF200 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E30672B73B74F007FF200 /* HeaderView.swift */; };
+		BF7E306A2B73B772007FF200 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E30692B73B772007FF200 /* LoadingView.swift */; };
+		BF7E306F2B73B80E007FF200 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF7E306E2B73B80E007FF200 /* Localizable.strings */; };
+		BF7E30722B73B8CE007FF200 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E30712B73B8CE007FF200 /* String+Extensions.swift */; };
+		BF7E30752B73C5F9007FF200 /* ParsedJsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E30742B73C5F9007FF200 /* ParsedJsonData.swift */; };
+		BF7E30772B73C7F0007FF200 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E30762B73C7F0007FF200 /* ActivityIndicatorView.swift */; };
+		BF7E307E2B73D9AB007FF200 /* PaymentItemsOverviewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E307D2B73D9AB007FF200 /* PaymentItemsOverviewScreen.swift */; };
+		BF7E30802B73D9FC007FF200 /* PaymentItemsOverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E307F2B73D9FC007FF200 /* PaymentItemsOverviewViewModel.swift */; };
+		BF8856C82B74C44600D8996C /* PaymentItemListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8856C72B74C44600D8996C /* PaymentItemListRowView.swift */; };
+		BF8856CA2B74C53100D8996C /* PaymentProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8856C92B74C53100D8996C /* PaymentProductRow.swift */; };
+		BF8856CE2B74D05900D8996C /* OnlinePaymentsKit in Frameworks */ = {isa = PBXBuildFile; productRef = BF8856CD2B74D05900D8996C /* OnlinePaymentsKit */; };
+		BF8856D02B74D13500D8996C /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8856CF2B74D13500D8996C /* UIApplication+Extensions.swift */; };
+		BF8856D32B74D6A500D8996C /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8856D22B74D6A500D8996C /* Macros.swift */; };
+		BF8856D52B74F7CD00D8996C /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8856D42B74F7CD00D8996C /* View+Extensions.swift */; };
+		BF8856D72B74F83600D8996C /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8856D62B74F83600D8996C /* BottomSheetView.swift */; };
+		BF8856DC2B75019600D8996C /* CardProductScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8856DB2B75019600D8996C /* CardProductScreen.swift */; };
+		BF8856DE2B75019F00D8996C /* CardProductScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8856DD2B75019F00D8996C /* CardProductScreenViewModel.swift */; };
+		BF8856E02B75041400D8996C /* ProductTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8856DF2B75041400D8996C /* ProductTextFieldView.swift */; };
+		BF8856E22B75192900D8996C /* Alert+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8856E12B75192900D8996C /* Alert+Extensions.swift */; };
+		BFD13E262B75273400891A3E /* ValidationErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD13E252B75273400891A3E /* ValidationErrorHandler.swift */; };
+		BFFA0C5E2B765DD1001F260C /* EndScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFA0C5D2B765DD1001F260C /* EndScreenViewModel.swift */; };
+		BFFA0C602B765DD9001F260C /* EndScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFA0C5F2B765DD9001F260C /* EndScreen.swift */; };
+		BFFA0C632B765E9B001F260C /* NavigationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFA0C622B765E9B001F260C /* NavigationUtil.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF7E303D2B739984007FF200 /* OnlinePaymentsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlinePaymentsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF7E30422B739984007FF200 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BF7E30442B739986007FF200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF7E30462B739986007FF200 /* OnlinePaymentsExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OnlinePaymentsExample.entitlements; sourceTree = "<group>"; };
+		BF7E30502B73A6A0007FF200 /* StartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; };
+		BF7E30532B73A716007FF200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF7E305A2B73B4ED007FF200 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		BF7E30602B73B606007FF200 /* StartScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewModel.swift; sourceTree = "<group>"; };
+		BF7E30632B73B6BA007FF200 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		BF7E30652B73B6D6007FF200 /* InfoButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoButtonView.swift; sourceTree = "<group>"; };
+		BF7E30672B73B74F007FF200 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		BF7E30692B73B772007FF200 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		BF7E306E2B73B80E007FF200 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		BF7E30712B73B8CE007FF200 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		BF7E30742B73C5F9007FF200 /* ParsedJsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedJsonData.swift; sourceTree = "<group>"; };
+		BF7E30762B73C7F0007FF200 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		BF7E307D2B73D9AB007FF200 /* PaymentItemsOverviewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentItemsOverviewScreen.swift; sourceTree = "<group>"; };
+		BF7E307F2B73D9FC007FF200 /* PaymentItemsOverviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentItemsOverviewViewModel.swift; sourceTree = "<group>"; };
+		BF8856C72B74C44600D8996C /* PaymentItemListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentItemListRowView.swift; sourceTree = "<group>"; };
+		BF8856C92B74C53100D8996C /* PaymentProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentProductRow.swift; sourceTree = "<group>"; };
+		BF8856CF2B74D13500D8996C /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		BF8856D22B74D6A500D8996C /* Macros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
+		BF8856D42B74F7CD00D8996C /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		BF8856D62B74F83600D8996C /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		BF8856DB2B75019600D8996C /* CardProductScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProductScreen.swift; sourceTree = "<group>"; };
+		BF8856DD2B75019F00D8996C /* CardProductScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProductScreenViewModel.swift; sourceTree = "<group>"; };
+		BF8856DF2B75041400D8996C /* ProductTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTextFieldView.swift; sourceTree = "<group>"; };
+		BF8856E12B75192900D8996C /* Alert+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+Extensions.swift"; sourceTree = "<group>"; };
+		BFD13E252B75273400891A3E /* ValidationErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationErrorHandler.swift; sourceTree = "<group>"; };
+		BFFA0C5D2B765DD1001F260C /* EndScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndScreenViewModel.swift; sourceTree = "<group>"; };
+		BFFA0C5F2B765DD9001F260C /* EndScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndScreen.swift; sourceTree = "<group>"; };
+		BFFA0C622B765E9B001F260C /* NavigationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUtil.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF7E303A2B739984007FF200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF7E305E2B73B543007FF200 /* OnlinePaymentsKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF7E30342B739984007FF200 = {
+			isa = PBXGroup;
+			children = (
+				BF7E303F2B739984007FF200 /* OnlinePaymentsExample */,
+				BF7E303E2B739984007FF200 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF7E303E2B739984007FF200 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E303D2B739984007FF200 /* OnlinePaymentsExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF7E303F2B739984007FF200 /* OnlinePaymentsExample */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E30462B739986007FF200 /* OnlinePaymentsExample.entitlements */,
+				BF7E30522B73A70D007FF200 /* App */,
+				BF7E30592B73B4E5007FF200 /* Constants */,
+				BF7E30702B73B8BA007FF200 /* Extensions */,
+				BFD13E242B75271400891A3E /* ErrorHandling */,
+				BF8856D12B74D69900D8996C /* Logging */,
+				BF7E30732B73C5E5007FF200 /* Models */,
+				BF7E306B2B73B7B5007FF200 /* Resources */,
+				BF7E304F2B73A68F007FF200 /* Screens */,
+				BF7E30622B73B699007FF200 /* UI Components */,
+				BFFA0C612B765E7F001F260C /* Util */,
+			);
+			path = OnlinePaymentsExample;
+			sourceTree = "<group>";
+		};
+		BF7E304F2B73A68F007FF200 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BF8856DA2B75015F00D8996C /* CardProduct */,
+				BFFA0C5C2B765DC5001F260C /* End */,
+				BF7E307C2B73D99C007FF200 /* PaymentItemsOverview */,
+				BF7E305F2B73B5E9007FF200 /* Start */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		BF7E30522B73A70D007FF200 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E30532B73A716007FF200 /* AppDelegate.swift */,
+				BF7E30422B739984007FF200 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BF7E30592B73B4E5007FF200 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E305A2B73B4ED007FF200 /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		BF7E305F2B73B5E9007FF200 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E30502B73A6A0007FF200 /* StartScreen.swift */,
+				BF7E30602B73B606007FF200 /* StartScreenViewModel.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		BF7E30622B73B699007FF200 /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E30632B73B6BA007FF200 /* TextFieldView.swift */,
+				BF7E30652B73B6D6007FF200 /* InfoButtonView.swift */,
+				BF7E30672B73B74F007FF200 /* HeaderView.swift */,
+				BF7E30692B73B772007FF200 /* LoadingView.swift */,
+				BF7E30762B73C7F0007FF200 /* ActivityIndicatorView.swift */,
+				BF8856C72B74C44600D8996C /* PaymentItemListRowView.swift */,
+				BF8856D62B74F83600D8996C /* BottomSheetView.swift */,
+				BF8856DF2B75041400D8996C /* ProductTextFieldView.swift */,
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		BF7E306B2B73B7B5007FF200 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E30442B739986007FF200 /* Assets.xcassets */,
+				BF7E306E2B73B80E007FF200 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BF7E30702B73B8BA007FF200 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E30712B73B8CE007FF200 /* String+Extensions.swift */,
+				BF8856CF2B74D13500D8996C /* UIApplication+Extensions.swift */,
+				BF8856D42B74F7CD00D8996C /* View+Extensions.swift */,
+				BF8856E12B75192900D8996C /* Alert+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BF7E30732B73C5E5007FF200 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E30742B73C5F9007FF200 /* ParsedJsonData.swift */,
+				BF8856C92B74C53100D8996C /* PaymentProductRow.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BF7E307C2B73D99C007FF200 /* PaymentItemsOverview */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E307D2B73D9AB007FF200 /* PaymentItemsOverviewScreen.swift */,
+				BF7E307F2B73D9FC007FF200 /* PaymentItemsOverviewViewModel.swift */,
+			);
+			path = PaymentItemsOverview;
+			sourceTree = "<group>";
+		};
+		BF8856D12B74D69900D8996C /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				BF8856D22B74D6A500D8996C /* Macros.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		BF8856DA2B75015F00D8996C /* CardProduct */ = {
+			isa = PBXGroup;
+			children = (
+				BF8856DB2B75019600D8996C /* CardProductScreen.swift */,
+				BF8856DD2B75019F00D8996C /* CardProductScreenViewModel.swift */,
+			);
+			path = CardProduct;
+			sourceTree = "<group>";
+		};
+		BFD13E242B75271400891A3E /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				BFD13E252B75273400891A3E /* ValidationErrorHandler.swift */,
+			);
+			path = ErrorHandling;
+			sourceTree = "<group>";
+		};
+		BFFA0C5C2B765DC5001F260C /* End */ = {
+			isa = PBXGroup;
+			children = (
+				BFFA0C5F2B765DD9001F260C /* EndScreen.swift */,
+				BFFA0C5D2B765DD1001F260C /* EndScreenViewModel.swift */,
+			);
+			path = End;
+			sourceTree = "<group>";
+		};
+		BFFA0C612B765E7F001F260C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				BFFA0C622B765E9B001F260C /* NavigationUtil.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF7E303C2B739984007FF200 /* OnlinePaymentsExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF7E304C2B739986007FF200 /* Build configuration list for PBXNativeTarget "OnlinePaymentsExample" */;
+			buildPhases = (
+				BF7E30392B739984007FF200 /* Sources */,
+				BF7E303A2B739984007FF200 /* Frameworks */,
+				BF7E303B2B739984007FF200 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OnlinePaymentsExample;
+			packageProductDependencies = (
+				BF7E305D2B73B543007FF200 /* OnlinePaymentsKit */,
+			);
+			productName = OnlinePaymentsExample;
+			productReference = BF7E303D2B739984007FF200 /* OnlinePaymentsExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF7E30352B739984007FF200 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					BF7E303C2B739984007FF200 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = BF7E30382B739984007FF200 /* Build configuration list for PBXProject "OnlinePaymentsExample" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF7E30342B739984007FF200;
+			packageReferences = (
+				BF7E305C2B73B543007FF200 /* XCRemoteSwiftPackageReference "sdk-client-swift" */,
+			);
+			productRefGroup = BF7E303E2B739984007FF200 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF7E303C2B739984007FF200 /* OnlinePaymentsExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF7E303B2B739984007FF200 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF7E306F2B73B80E007FF200 /* Localizable.strings in Resources */,
+				BF7E30452B739986007FF200 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF7E30392B739984007FF200 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8856D32B74D6A500D8996C /* Macros.swift in Sources */,
+				BFFA0C632B765E9B001F260C /* NavigationUtil.swift in Sources */,
+				BF8856D72B74F83600D8996C /* BottomSheetView.swift in Sources */,
+				BF7E30752B73C5F9007FF200 /* ParsedJsonData.swift in Sources */,
+				BF7E30542B73A716007FF200 /* AppDelegate.swift in Sources */,
+				BFFA0C602B765DD9001F260C /* EndScreen.swift in Sources */,
+				BF8856E22B75192900D8996C /* Alert+Extensions.swift in Sources */,
+				BF7E307E2B73D9AB007FF200 /* PaymentItemsOverviewScreen.swift in Sources */,
+				BF7E30432B739984007FF200 /* SceneDelegate.swift in Sources */,
+				BFD13E262B75273400891A3E /* ValidationErrorHandler.swift in Sources */,
+				BF8856DE2B75019F00D8996C /* CardProductScreenViewModel.swift in Sources */,
+				BF7E30772B73C7F0007FF200 /* ActivityIndicatorView.swift in Sources */,
+				BF7E30802B73D9FC007FF200 /* PaymentItemsOverviewViewModel.swift in Sources */,
+				BF8856E02B75041400D8996C /* ProductTextFieldView.swift in Sources */,
+				BF8856C82B74C44600D8996C /* PaymentItemListRowView.swift in Sources */,
+				BF8856D02B74D13500D8996C /* UIApplication+Extensions.swift in Sources */,
+				BFFA0C5E2B765DD1001F260C /* EndScreenViewModel.swift in Sources */,
+				BF7E30722B73B8CE007FF200 /* String+Extensions.swift in Sources */,
+				BF7E30642B73B6BA007FF200 /* TextFieldView.swift in Sources */,
+				BF8856CA2B74C53100D8996C /* PaymentProductRow.swift in Sources */,
+				BF7E30512B73A6A0007FF200 /* StartScreen.swift in Sources */,
+				BF8856DC2B75019600D8996C /* CardProductScreen.swift in Sources */,
+				BF7E30662B73B6D6007FF200 /* InfoButtonView.swift in Sources */,
+				BF7E30612B73B606007FF200 /* StartScreenViewModel.swift in Sources */,
+				BF8856D52B74F7CD00D8996C /* View+Extensions.swift in Sources */,
+				BF7E305B2B73B4ED007FF200 /* AppConstants.swift in Sources */,
+				BF7E30682B73B74F007FF200 /* HeaderView.swift in Sources */,
+				BF7E306A2B73B772007FF200 /* LoadingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BF7E304A2B739986007FF200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = NO;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF7E304B2B739986007FF200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = NO;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		BF7E304D2B739986007FF200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_ENTITLEMENTS = OnlinePaymentsExample/OnlinePaymentsExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = OnlinePaymentsExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"${inherited}",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onlinepayments.OnlinePaymentsExampleSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF7E304E2B739986007FF200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_ENTITLEMENTS = OnlinePaymentsExample/OnlinePaymentsExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = OnlinePaymentsExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"${inherited}",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onlinepayments.OnlinePaymentsExampleSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF7E30382B739984007FF200 /* Build configuration list for PBXProject "OnlinePaymentsExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF7E304A2B739986007FF200 /* Debug */,
+				BF7E304B2B739986007FF200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF7E304C2B739986007FF200 /* Build configuration list for PBXNativeTarget "OnlinePaymentsExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF7E304D2B739986007FF200 /* Debug */,
+				BF7E304E2B739986007FF200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BF7E305C2B73B543007FF200 /* XCRemoteSwiftPackageReference "sdk-client-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wl-online-payments-direct/sdk-client-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BF7E305D2B73B543007FF200 /* OnlinePaymentsKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF7E305C2B73B543007FF200 /* XCRemoteSwiftPackageReference "sdk-client-swift" */;
+			productName = OnlinePaymentsKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BF7E30352B739984007FF200 /* Project object */;
+}

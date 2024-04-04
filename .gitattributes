@@ -1,0 +1,12 @@
+* text=auto
+.gitattributes export-ignore
+.gitignore export-ignore
+ 
+# Declare files that should have LF line endings on checkout
+*.sh eol=lf
+ 
+# Declare files that are truly binary and shouldn't be modified
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary

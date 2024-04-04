@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FILEHEADER</key>
+	<string>
+// Do not remove or alter the notices in this preamble.
+// This software code is created for Online Payments on ___DATE___
+// Copyright © ___YEAR___ Global Collect Services. All rights reserved.
+// </string>
+</dict>
+</plist>
