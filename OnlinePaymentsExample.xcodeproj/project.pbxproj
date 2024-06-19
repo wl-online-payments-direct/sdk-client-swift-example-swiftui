@@ -26,7 +26,6 @@
 		BF7E30802B73D9FC007FF200 /* PaymentItemsOverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E307F2B73D9FC007FF200 /* PaymentItemsOverviewViewModel.swift */; };
 		BF8856C82B74C44600D8996C /* PaymentItemListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8856C72B74C44600D8996C /* PaymentItemListRowView.swift */; };
 		BF8856CA2B74C53100D8996C /* PaymentProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8856C92B74C53100D8996C /* PaymentProductRow.swift */; };
-		BF8856CE2B74D05900D8996C /* OnlinePaymentsKit in Frameworks */ = {isa = PBXBuildFile; productRef = BF8856CD2B74D05900D8996C /* OnlinePaymentsKit */; };
 		BF8856D02B74D13500D8996C /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8856CF2B74D13500D8996C /* UIApplication+Extensions.swift */; };
 		BF8856D32B74D6A500D8996C /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8856D22B74D6A500D8996C /* Macros.swift */; };
 		BF8856D52B74F7CD00D8996C /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8856D42B74F7CD00D8996C /* View+Extensions.swift */; };
@@ -589,7 +588,7 @@
 			repositoryURL = "https://github.com/wl-online-payments-direct/sdk-client-swift";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.3.0;
+				minimumVersion = 2.4.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
